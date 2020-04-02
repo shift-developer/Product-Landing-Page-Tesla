@@ -1,0 +1,188 @@
+<html lang="en">
+	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+	
+<body>
+	
+	<div id="page-wrapper">
+		
+		<!-- SECTION HEADER -->
+  <header id="header">
+		
+		<div class="logo">
+      <img
+        id="header-img"
+        src="images/logo.png"
+        alt="Tesla logo"
+      />
+    </div>
+		
+		<nav id="nav-bar">
+			<input type="checkbox" id="btn-menu">
+            <label for="btn-menu" class="show-icon-menu">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <label for="btn-menu" class="hide-icon-menu">
+                <i class="fas fa-times"></i>
+            </label>
+			
+			<div class="menu-container">
+      	<ul>
+        	<li><a class="nav-link" href="#features">Features</a></li>
+        	<li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+        	<li><a class="nav-link" href="#pricing">Pricing</a></li>
+      	</ul>
+			</div>
+			</nav>
+		
+  
+  </header>
+		
+<!-- SECTION HERO -->		
+ <div class="container">
+  <section id="hero">
+    <h2>Be the first to receive the latest Tesla news, events and product updates.</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Get Newsletter" class="btn" />
+    </form>
+  </section>
+		</div>
+		
+<!-- SECTION FEATURES -->
+		
+<div class="container">
+    
+		<section id="features">
+      
+			<div class="grid">
+        <div class="icon"><i class="fas fa-3x fa-leaf"></i></div>
+        <div class="desc">
+          <h2>Clean Energy</h2>
+          <p>
+            Tesla believes the faster the world stops relying on fossil fuels and moves towards a zero-emission future, the better.
+          </p>
+        </div>
+      </div>
+			
+      <div class="grid">
+        <div class="icon"><i class="fa fa-3x fa-bolt"></i></div>
+        <div class="desc">
+          <h2> 0-60 mph acceleration time of 2.28 seconds</h2>
+          <p>
+            Electric vehicles can be better, quicker and more fun to drive than gasoline cars
+          </p>
+        </div>
+      </div>
+			
+      <div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-hand-holding-usd"></i>
+        </div>
+        <div class="desc">
+          <h2>Cheap fuel Cost</h2>
+          <p>
+            With 100 miles using 34kWh (about 100 MPG) and electricity costing an average of $0.12/kWh, the yearly cost to drive a Tesla Model S 85D 15,000 miles is $612.
+          </p>
+        </div>
+      </div>
+			
+			<div class="grid">
+        <div class="icon">
+          <i class="fa fa-3x fa-sitemap"></i>
+        </div>
+        <div class="desc">
+          <h2>Future of driving</h2>
+          <p>
+            All new Tesla cars come standard with advanced hardware capable of providing Autopilot features today, and full self-driving capabilities in the future—through software updates designed to improve functionality over time.
+          </p>
+        </div>
+      </div>
+			
+    </section>
+    <section id="how-it-works">
+      <iframe
+        id="video"
+        src="https://www.youtube-nocookie.com/embed/AiOxUcDgsa8"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </section>
+		
+    <section id="pricing">
+      <div class="product" id="model-s">
+        
+				<div class="level">Model S</div>
+				
+				<div class="model-img">
+					<img src="images/models.jpg" alt="model s image">
+				</div>
+				
+        <h2>$80.000</h2>
+        <ol>
+          <li>19" Tempest Wheels</li>
+          <li>Black and White Premium Interior</li>
+          <li>Autopilot</li>
+          <li>Glass Roof</li>
+        </ol>
+        <button class="btn">CUSTOM ORDER</button>
+				
+      </div>
+			
+      <div class="product" id="model-3">
+        <div class="level">Model 3</div>
+        <div class="model-img">
+					<img src="images/model3.jpg" alt="model 3 image">
+				</div>
+				<h2>$40000</h2>
+        <ol>
+          <li>18’’ Aero Wheels</li>
+          <li>Autopilot</li>
+          <li>30-day Premium Connectivity Trial</li>
+          <li>All Black Partial Premium Interior</li>
+        </ol>
+        <button class="btn">CUSTOM ORDER</button>
+      </div>
+			
+      <div class="product" id="model-x">
+        <div class="level">Model X</div>
+        <div class="model-img">
+					<img src="images/modelx.jpg" alt="model x image">
+				</div>
+				<h2>$85000</h2>
+        <ol>
+          <li>20" Silver Wheels</li>
+          <li>Black and White Premium Interior</li>
+          <li>Autopilot</li>
+          <li>Five Seat Interior</li>
+        </ol>
+        <button class="btn">CUSTOM ORDER</button>
+      </div>
+    </section>
+		
+    <footer>
+      <ul class="nav-footer">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span class="designedby">Designed and coded by Juan Shift</span>
+    </footer>
+  </div>
+</div> 
+</body>
+</html>

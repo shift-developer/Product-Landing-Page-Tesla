@@ -1,0 +1,465 @@
+@import "https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono&display=swap";
+
+body, h1, h2, h3, h4, h5, p {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+
+#header {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.btn {
+  padding: 0 10px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 2px black solid;
+  border-radius: 25px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+}
+
+header {
+  position: fixed;
+  top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  min-height: 60px;
+  background: #fff;
+    padding: 1rem;
+}
+
+
+
+/*---Nav bar----*/
+
+.logo {
+	width: 100px;
+	padding: 0;
+	margin: 0;
+}
+
+#header-img {
+	width: 100%;
+	display: block;
+	max-width: 100%;
+}
+
+.nav-bar {
+	display: flex;
+	flex-direction: row;
+}
+
+.nav-container {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btn-menu {
+    display: none;
+}
+
+/*Icono menu*/
+
+.show-icon-menu {
+    display: block;
+	  margin: 0;
+    width: 1.125rem;
+    height: 0.75rem;
+}
+
+
+
+/* Close Icon Menu*/
+.hide-icon-menu {
+    display: none;
+    width: 0.875rem;
+    height: 0.875rem;
+}
+
+#btn-menu:checked ~ .hide-icon-menu{
+    display: block;
+}
+
+#btn-menu:checked ~ .show-icon-menu{
+    display: none;
+}
+
+/*Menu */
+.menu-container {
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    top: 3.7rem;
+    background-color: #FFF;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    margin-left: -1rem;
+}
+
+
+
+.menu-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container li a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    color: #000;
+		border-bottom: 1px solid black;
+    cursor: pointer;
+		transition: 0.25s;
+}
+
+.menu-container li a:hover {
+		font-weight: 800;
+		transform: scale(1.1);
+		transition: 0.25s;
+}
+
+
+#btn-menu:checked ~ .menu-container{
+    display: block;
+		margin-left: -90%;
+}
+
+
+/*---HERO----- */
+
+#hero {
+	height: 50vh;
+	background-image: linear-gradient(
+      115deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.8)
+ ),url(https://www.muycomputer.com/wp-content/uploads/2019/11/Tesla_Cybertruck_3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 10vh;
+	display: flex;
+	flex-direction: column;
+}
+#hero h2 {
+	font-size: 1.5rem;
+	padding: 1rem;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 1rem;
+}
+
+#form {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
+	align-items: center;
+}
+
+#email {
+	height: 1.5rem;
+	width: 80%;
+	margin: 0;
+	padding: 0;
+}
+
+#submit {
+	color: #fff;
+	border: 2px white solid;
+	margin-top: 1rem;
+	font-size: 0.8rem;
+  font-weight: 800;
+	transition: 0.25s;
+}
+
+#submit:hover {
+	background-color: #fff;
+	color: #000;
+	transform: scale(1.1);
+	transition: 0.25s;
+}
+
+/*----FEATURES----- */
+
+#features {
+	margin-top: 3rem;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1rem;
+}
+
+.grid {
+	padding-top: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.desc {
+	display: flex;
+	max-width: 320px;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 3rem;
+}
+
+.desc p, h2 {
+	text-align: center;
+}
+
+.desc p {
+	margin-top: 0.5rem;
+}
+
+
+/* HOW IT WORKS */
+
+#how-it-works {
+	padding-top: 3rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	margin-bottom: 2rem;
+	box-sizing: border-box;
+}
+
+#video {
+	width:100%;
+	height: 50vw;
+	display: block;
+}
+
+/*---PRICING---- */
+
+#pricing {
+	padding: 1rem;
+}
+
+.product {
+	border: 1px solid #adaeae;
+	margin-bottom: 2rem;
+	display: flex;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	box-sizing: border-box;
+	flex-direction: column;
+	align-items: center;
+}
+
+.level {
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+.product .btn {
+	border: 2px solid #3e6ae1;
+	font-size: 0.8rem;
+	width:80%;
+	padding: 0;
+	margin: 0;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-weight: 600;
+	color: #FFF;
+	background: #3e6ae1;
+	transition: 0.25s;
+}
+
+.product .btn:hover {
+	transform: scale(1.1);
+	transition: 0.25s;
+}
+
+
+.model-img {
+	width: 100%;
+}
+
+.model-img img {
+	display: block;
+	width: 100%;
+}
+
+/*---FOOTER---- */
+
+footer {
+	box-sizing: border-box;
+	width: 100%;
+	border-top: 1px solid #000;
+	padding: 1rem;
+}
+
+.nav-footer {
+	display: flex;
+	justify-content: space-around;
+	margin-left: -1rem;
+}
+
+.nav-footer li a:hover {
+	font-weight: 600;
+	border-bottom: 1px solid #000;
+}
+
+.designedby {
+	display: block;
+	text-align: center;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+	
+	.menu-container {
+    display: block;
+    position: static;
+    width: 300px;
+    background-color: #fff;
+}
+	
+	.menu-container ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+		justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-container li a {
+    display: block;
+    color: #000;
+		border-bottom: 0;
+}
+	
+	.show-icon-menu {
+		display: none;
+	}
+	
+	.hide-icon-menu {
+		display: none;
+	}
+	
+	#hero {
+	height: 70vh;
+  margin-top: 0;
+}
+	
+#hero h2 {
+	font-size: 1.2rem;
+	margin-top: 25vh;
+}
+
+#form {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	justify-content: center;
+}
+
+#email {
+	height: 2.2rem;
+	font-size: 1.2rem;
+	width: 50%;
+	margin-right: 1rem;
+}
+
+#features {
+	padding: 1rem;
+	max-width: 900px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+	
+	
+#pricing {
+	padding: 5%;
+}
+
+.product {
+	margin-bottom: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.product .btn {
+	width: 30%;
+	margin-top: 1rem;
+}
+
+	
+}
+
+@media screen and (min-width: 1024px) {
+    
+    header {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+	.product {
+	flex-wrap: wrap;
+	height: 450px;
+}
+
+	.product h2 {
+		margin-top: 4rem;
+	}
+
+.model-img {
+	width: 60%;
+}
+
+	#video {
+	width: 93%;
+    height: 50vw;
+    max-height: 520px;
+	display: block;
+	margin: auto;
+}
+	
+	
+}
